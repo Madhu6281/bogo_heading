@@ -1,0 +1,262 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    text-align: center;
+  }
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Heading Styles */
+
+.heading-container {
+  text-align: center; 
+  margin: 20px 0; 
+}
+
+.lined-heading {
+  display: inline-block; 
+  color: #ff6384;
+  font-size: 24px; 
+  font-weight: bold; 
+  position: relative; 
+}
+
+.lined-heading::before,
+.lined-heading::after {
+  content: "";
+  position: absolute;
+  top: 50%; 
+  width: 50px; 
+  height: 2px; 
+  background-color: #cccccc;
+}
+
+.lined-heading::before {
+  left: -60px; 
+ }
+
+.lined-heading::after {
+  right: -60px;
+}
+
+/* Box Styles */
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid #FF69B4;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.box:hover {
+    background-color: #FFF0F5;
+}
+
+.radio-container {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.radio-container input[type="radio"] {
+    accent-color: #FF69B4;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+
+.box-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.left-side {
+    flex: 1;
+    text-align: left;
+}
+
+.box h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.box span {
+    font-size: 14px;
+    color: gray;
+}
+
+.discount {
+    display: inline-block;
+    background-color: #FF69B4;
+    color: #fff;
+    padding: 2px 8px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    text-align: left;
+}
+
+.price del {
+    color: gray;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.most-popular {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #FF69B4;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+  /* Options Section */
+.options {
+  margin-top: 10px;
+  padding: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.box.expanded .options {
+    display: block;
+}
+
+.options label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.dropdown-header label {
+  font-size: 14px;
+  font-weight: bold;  
+}
+
+.dropdown-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.dropdown-row label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 10px;  
+}
+
+.dropdown-row select {
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.dropdown-row:last-child {
+  margin-bottom: 0;
+}
+
+.select-option {
+  width: 150px; 
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.label-sc{
+  width: 150px; 
+  padding: 3px;
+  font-size: 14px;
+}
+
+.delivery-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px;
+}
+
+.free-delivery {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FF69B4;
+}
+
+.total {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000; 
+}
+
+
+/* Button Styles */
+.add-to-cart {
+    display: block;
+    width: 100%;
+    background-color: #FF69B4;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #ff5897;
+}
+
+.success-message {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.footer {   
+    display: flex;
+    justify-content: flex-end;
+    font-size: 12px;
+    color: gray;
+    margin-top: 10px;
+}

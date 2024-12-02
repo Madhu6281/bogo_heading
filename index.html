@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOGO Offer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+   <div class="heading-container">
+     <h2 class="lined-heading">YAY! It's BOGO</h2>
+   </div>
+
+
+    <div class="container">
+
+    <!----Box 1------------------------------------->
+
+        <div class="box">
+            <div class="box-content">
+                <div class="left-side">
+                    <div class="radio-container">
+                        <input type="radio" name="unit" onclick="toggleOptions(this)" />
+                        <h2>1 Unit <span class="discount">10% Off</span><br /><span>Standard Price</span></h2>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <p class="price">$10.00 USD <br /><del>$24.00 USD</del></p>
+                </div>
+            </div>
+
+            
+
+            <div id="options" class="options hidden">
+                <div class="dropdown-container">                   
+                    <div class="dropdown-header">
+                        <label class="label-sc">Size</label>
+                        <label class="label-sc">Colour</label>
+                    </div>                    
+                    <div class="dropdown-row">
+                        <label>#1</label>
+                        <select class="select-option">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                        <select class="select-option">
+                            <option>Black</option>
+                            <option>White</option>
+                            <option>Red</option>
+                        </select>
+                    </div>                    
+                    <div class="dropdown-row">
+                        <label>#2</label>
+                        <select class="select-option">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                        <select class="select-option">
+                            <option>Black</option>
+                            <option>White</option>
+                            <option>Red</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!------ Box 2 ---------------------------------------->
+
+        <div class="box">
+            <div class="box-content">               
+                <div class="left-side">
+                    <div class="radio-container">
+                        <input type="radio" name="unit" onclick="toggleOptions(this)" />
+                        <h2>2 Unit <span class="discount">20% Off</span></h2>
+                    </div>
+                </div>                
+                <div class="right-side">
+                    <p class="price">$18.00 USD <br /><del>$24.00 USD</del></p>
+                    <div class="most-popular">MOST POPULAR</div>
+                </div>
+            </div>
+
+            
+            <div id="options" class="options hidden">
+                <div class="dropdown-container">                   
+                    <div class="dropdown-header">
+                        <label class="label-sc">Size</label>
+                        <label class="label-sc">Colour</label>
+                    </div>                    
+                    <div class="dropdown-row">
+                        <label>#1</label>
+                        <select class="select-option">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                        <select class="select-option">
+                            <option>Black</option>
+                            <option>White</option>
+                            <option>Red</option>
+                        </select>
+                    </div>                
+                    <div class="dropdown-row">
+                        <label>#2</label>
+                        <select class="select-option">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                        <select class="select-option">
+                            <option>Black</option>
+                            <option>White</option>
+                            <option>Red</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!------ Box 3 -------------------------------------->
+
+        <div class="box">
+            <div class="box-content">               
+                <div class="left-side">
+                    <div class="radio-container">
+                        <input type="radio" name="unit" onclick="toggleOptions(this)" />
+                        <h2>3 Unit <span class="discount">30% Off</span></h2>
+                    </div>
+                </div>                
+                <div class="right-side">
+                    <p class="price">$24.00 USD <br /><del>$24.00 USD</del></p>
+                </div>
+            </div>
+
+
+            <div id="options" class="options hidden">
+                <div class="dropdown-container">                    
+                    <div class="dropdown-header">
+                        <label class="label-sc">Size</label>
+                        <label class="label-sc">Colour</label>
+                    </div>                    
+                    <div class="dropdown-row">
+                        <label>#1</label>
+                        <select class="select-option">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                        <select class="select-option">
+                            <option>Black</option>
+                            <option>White</option>
+                            <option>Red</option>
+                        </select>
+                    </div>                    
+                    <div class="dropdown-row">
+                        <label>#2</label>
+                        <select class="select-option">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                        <select class="select-option">
+                            <option>Black</option>
+                            <option>White</option>
+                            <option>Red</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!----- Free Delivery & Total ------------------------->
+
+       <div class="delivery-container">
+         <div class="free-delivery">Free Delivery</div>
+         <div class="total">Total: $0.00 USD</div>
+       </div>
+
+    <!------ Add to Cart Button ---------------------------->
+    
+        <button class="add-to-cart">+ Add to Cart</button>
+        <div id="success-message" style="display: none; color: green;">Successfully added to cart!</div>
+        <div class="footer">
+          <div class="footer">@ Powered by Pumper</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
